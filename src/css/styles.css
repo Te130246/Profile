@@ -1,0 +1,21 @@
+.input-group {
+    position: relative;
+  }
+  
+  .form-label {
+    position: absolute;
+    top: -10px; /* ปรับตำแหน่งขึ้น */
+    left: 15px; /* ปรับตำแหน่งซ้าย */
+    font-size: 0.9rem; /* ขนาดฟอนต์ */
+    color: #6c757d; /* สีฟอนต์ */
+    transition: 0.2s; /* การเปลี่ยนแปลง */
+  }
+  
+  .form-control:focus + .form-label,
+  .form-control:not(:placeholder-shown) + .form-label {
+    top: -20px; /* ปรับตำแหน่งเมื่อมีการพิมพ์ */
+    left: 10px; /* ปรับตำแหน่งเมื่อมีการพิมพ์ */
+    font-size: 0.8rem; /* ขนาดฟอนต์เมื่อมีการพิมพ์ */
+    color: #007bff; /* สีฟอนต์เมื่อมีการพิมพ์ */
+  }
+  
